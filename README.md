@@ -37,6 +37,10 @@ This AI-Powered Voice Assistant listens to your voice, processes the command usi
 | ➗ Calculator | Perform basic math |
 
 ---
+> **Note:** If any module error appears while running, install it using:
+> ```
+> pip install <module_name>
+> ```
 
 ## ⚙️ Setup Instructions
 
@@ -45,8 +49,5 @@ This AI-Powered Voice Assistant listens to your voice, processes the command usi
 git clone https://github.com/MrShalby/AI-Powered-Voice-Assistant.git
 cd AI-Powered-Voice-Assistant
 
-> **Note:** If any module error appears while running, install it using:
-> ```
-> pip install <module_name>
-> ```
+
 
