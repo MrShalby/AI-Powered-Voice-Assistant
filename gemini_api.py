@@ -1,9 +1,9 @@
 import requests
 
 def query_gemini_api(user_query):
-    api_url = "https://api.gemini.com/v1/query"  # Replace with the actual Gemini API endpoint
+    api_url = ""  # Replace with the actual Gemini API endpoint
     headers = {
-        "Authorization": "AIzaSyBBrcCBVh57YSBhqupuEnpsqh3-m4rdrM8",  # Replace with your actual API key
+        "Authorization": "",  # Replace with your actual API key
         "Content-Type": "application/json"
     }
     payload = {
