@@ -1,3 +1,22 @@
+# 🎙️ AI-Powered Voice Assistant
+
+A Python-based intelligent voice assistant that can respond to your spoken commands, perform tasks like sending emails, checking weather/news, playing music, taking notes, doing calculations, and even interacting with AI via a Language Model API.
+
+---
+
+## 🧠 Overview
+
+This AI-Powered Voice Assistant listens to your voice, processes the command using keyword-based logic (and optionally with an LLM), and performs the task using specialized modules.
+
+- 🎤 Converts voice to text using `speech_recognition`
+- 🗣️ Speaks responses using `pyttsx3`
+- 🔍 Integrates utilities like email, weather, notes, music, reminders, and PDFs
+- 💬 (Optional) Connects to an external AI API like Gemini/OpenAI for enhanced responses
+
+---
+
+## 📁 Project Structure
+
 
 ---
 
