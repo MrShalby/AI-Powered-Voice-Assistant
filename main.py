@@ -258,7 +258,7 @@ class AssistantWindow:
         if command == "play music":
             try:
                 # Use raw string and forward slashes for path
-                music_dir = r"D:/Users/Rajesh Prajapati/ff/my data/Music/ms"
+                music_dir = r"(use your directory where songs been stored)"
                 
                 # Add input dialog for specific song
                 speak("Would you like to play a specific song? Say yes or no")
@@ -360,17 +360,17 @@ def process_query(query):
                     speak("Please specify the city.")
                     city_name = takeCommand()  # Get city name from user
                     # Fetch news for the specified city
-                    api_key = "pub_681657c9928c048f2caf5dab3590329efe16d"  # Your NewsData.io API key
+                    api_key = ""  # Your NewsData.io API key
                     news_articles = get_news(api_key, country_code, city=city_name)  # Fetch news by city
                 elif 'state' in location_type:
                     speak("Please specify the state.")
                     state_name = takeCommand()  # Get state name from user
                     # Fetch news for the specified state
-                    api_key = "pub_681657c9928c048f2caf5dab3590329efe16d"  # Your NewsData.io API key
+                    api_key = ""  # Your NewsData.io API key
                     news_articles = get_news(api_key, country_code, state=state_name)  # Fetch news by state
                 else:
                     # If neither city nor state is specified, fetch general news for the country
-                    api_key = "pub_681657c9928c048f2caf5dab3590329efe16d"  # Your NewsData.io API key
+                    api_key = ""  # Your NewsData.io API key
                     news_articles = get_news(api_key, country_code)  # Fetch news by country
                 
                 if news_articles:
@@ -385,7 +385,7 @@ def process_query(query):
         # Check for related news command
         elif 'related  about' in query:
             topic = query.replace("related news about", "").strip()  # Extract the topic from the query
-            api_key = "pub_681657c9928c048f2caf5dab3590329efe16d"  # Your NewsData.io API key
+            api_key = ""  # Your NewsData.io API key
             news_articles = get_news(api_key, None, topic)  # Fetch related news
             if news_articles:
                 news_summary = "\n".join(news_articles)
@@ -465,7 +465,7 @@ def process_query(query):
             speak("Which city?")
             city = takeCommand()  # Get city name from user
             if city != "None":
-                api_key = "29671cdf7262218be46f54a04aea3b20"  # Replace with your OpenWeatherMap API key
+                api_key = ""  # Replace with your OpenWeatherMap API key
                 weather_info = get_weather(city, api_key)
                 if weather_info:
                     temp, humidity, description = weather_info
@@ -569,8 +569,8 @@ def process_query(query):
                 message = takeCommand()
                 
                 # Your email credentials
-                sender_email = "rajesh2803p@gmail.com"
-                sender_password = "islunadrxmfwxpkq"
+                sender_email = "" # Add your email to send mail 
+                sender_password = "" # Authentic code from mail service that grant you to send mail
                 
                 success, result = send_email(sender_email, sender_password, recipient_email, subject, message)
                 
@@ -634,7 +634,7 @@ def process_query(query):
                 reminder_message = takeCommand()
                 
                 # Set default email without asking
-                reminder_email = "rajesh2803p@gmail.com"  # Your default email address
+                reminder_email = ""  # Your default email address
 
                 # Set the reminder
                 reminder_time = assistant_window.reminder_manager.add_reminder(
@@ -672,7 +672,7 @@ def process_query(query):
         elif 'play music' in query or 'play song' in query:
             try:
                 # Use raw string and forward slashes for path
-                music_dir = r"D:\python\Nova\Nova\myad"
+                music_dir = r""
                 
                 # Check if a specific song was requested
                 specific_song = None
