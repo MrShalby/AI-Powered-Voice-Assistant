@@ -56,8 +56,8 @@ class ReminderManager:
                         if speak_callback:
                             speak_callback(f"Attempting to send email reminder to {email}")
                         
-                        sender_email = "rajesh2803p@gmail.com"
-                        sender_password = "kqlphsddvxeqltdl"
+                        sender_email = "" # Your email Address
+                        sender_password = "" # Your email authentication code 
                         subject = "Nova Assistant Reminder"
                         
                         success, result = send_email(sender_email, sender_password, email, subject, message)
